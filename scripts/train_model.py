@@ -22,9 +22,23 @@ async def train_model():
         # Connect to database
         await db_manager.connect()
         
-        # Sample store and product IDs (replace with actual ones from your Node.js API)
-        sample_stores = ["store_001", "store_002", "store_003"]
-        sample_products = ["product_001", "product_002", "product_003"]
+        # Get actual store and product IDs from Node.js API
+        all_stores = await data_service.fetch_all_stores()
+        logger.info(f"Found {len(all_stores)} stores in the system")
+        
+        # Use first few stores for training (to avoid too much data)
+        sample_stores = all_stores[:3] if len(all_stores) >= 3 else all_stores
+        logger.info(f"Using {len(sample_stores)} stores for training: {sample_stores}")
+        
+        sample_products = []
+        for store_id in sample_stores:
+            store_products = await data_service.fetch_store_products(store_id)
+            # Use more products per store to get more data
+            sample_products.extend(store_products[:5])  # Use first 5 products
+        
+        # Remove duplicates
+        sample_products = list(set(sample_products))
+        logger.info(f"Using {len(sample_products)} unique products for training")
         
         all_sales_data = []
         

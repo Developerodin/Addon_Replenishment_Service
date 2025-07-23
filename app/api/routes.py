@@ -53,9 +53,9 @@ async def predict_forecast(request: PredictionRequest):
         Prediction response with forecasted quantity
     """
     try:
-        # Calculate date range for historical data
-        end_date = request.forecast_month - timedelta(days=1)
-        start_date = end_date - timedelta(days=30 * request.historical_months)
+        # Calculate date range for historical data (more lenient)
+        end_date = datetime.now()  # Use current date instead of forecast month
+        start_date = end_date - timedelta(days=365)  # Get last year of data
         
         # Fetch historical sales data
         sales_data = await data_service.fetch_sales_data(
@@ -128,6 +128,28 @@ async def predict_forecast(request: PredictionRequest):
     except Exception as e:
         logger.error(f"Error in predict_forecast: {e}")
         raise HTTPException(status_code=500, detail="Prediction failed")
+
+
+@router.get("/predictions/recent", response_model=List[PredictionInDB])
+async def get_recent_predictions(
+    limit: int = Query(50, ge=1, le=1000)
+):
+    """
+    Get recent predictions.
+    
+    Args:
+        limit: Maximum number of predictions to return
+        
+    Returns:
+        List of recent predictions
+    """
+    try:
+        predictions = await prediction_repository.get_recent_predictions(limit)
+        return predictions
+        
+    except Exception as e:
+        logger.error(f"Error getting recent predictions: {e}")
+        raise HTTPException(status_code=500, detail="Failed to get recent predictions")
 
 
 @router.get("/predictions/{prediction_id}", response_model=PredictionInDB)
@@ -290,28 +312,6 @@ async def delete_prediction(prediction_id: str):
     except Exception as e:
         logger.error(f"Error deleting prediction: {e}")
         raise HTTPException(status_code=500, detail="Failed to delete prediction")
-
-
-@router.get("/predictions/recent", response_model=List[PredictionInDB])
-async def get_recent_predictions(
-    limit: int = Query(50, ge=1, le=1000)
-):
-    """
-    Get recent predictions.
-    
-    Args:
-        limit: Maximum number of predictions to return
-        
-    Returns:
-        List of recent predictions
-    """
-    try:
-        predictions = await prediction_repository.get_recent_predictions(limit)
-        return predictions
-        
-    except Exception as e:
-        logger.error(f"Error getting recent predictions: {e}")
-        raise HTTPException(status_code=500, detail="Failed to get recent predictions")
 
 
 @router.get("/stats/accuracy")

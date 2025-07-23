@@ -1,0 +1,451 @@
+2025-07-22 11:27:58 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-22 11:27:58 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-22 11:27:58 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-22 11:27:58 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-22 11:27:58 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-22 11:30:21 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-22 11:30:21 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-22 11:30:21 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-22 11:30:21 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-22 11:30:21 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-22 11:32:11 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-22 11:32:11 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-22 11:32:11 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-22 11:32:11 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-22 17:45:00 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-22 17:45:00 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-22 17:45:00 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-22 17:45:00 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-22 17:45:00 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:54:06 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:54:06 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:54:06 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:54:06 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:54:06 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:57:42 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:57:42 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:57:42 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:57:42 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:57:52 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:57:52 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:57:52 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:57:52 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:57:52 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:58:39 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:58:39 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:58:39 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:58:39 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:58:47 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:58:47 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:58:47 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:58:47 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:58:47 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:59:14 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:59:14 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:59:14 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:59:14 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:59:18 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:59:18 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:59:18 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:59:18 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:59:18 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:59:20 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:59:21 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:59:21 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:59:21 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:59:25 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:59:25 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:59:25 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:59:25 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:59:25 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:59:30 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:59:30 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:59:30 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:59:30 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:59:34 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:59:34 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:59:34 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:59:34 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:59:34 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 10:59:49 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 10:59:49 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 10:59:49 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 10:59:49 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 10:59:53 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 10:59:53 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 10:59:53 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 10:59:53 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 10:59:53 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:00:01 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:00:01 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:00:01 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:00:01 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:00:04 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:00:04 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:00:04 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 11:00:04 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 11:00:04 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:00:27 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:00:27 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:00:27 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:00:27 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:00:31 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:00:31 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:00:31 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 11:00:31 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 11:00:31 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:00:35 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:00:35 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:00:35 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:00:35 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:00:39 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:00:39 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:00:39 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 11:00:39 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 11:00:39 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:01:12 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:01:12 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:01:12 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:01:12 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:01:17 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:01:17 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:01:17 | WARNING  | app.services.ml_service:_load_model:239 - No saved model found
+2025-07-23 11:01:17 | WARNING  | app.main:lifespan:61 - No ML model found - predictions will fail until model is trained
+2025-07-23 11:01:17 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:01:35 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:01:52 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:01:52 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:01:52 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:01:52 | ERROR    | app.repositories.prediction_repository:create_prediction:41 - Error creating prediction: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:01:52 | ERROR    | app.api.routes:predict_forecast:129 - Error in predict_forecast: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:01:54 | ERROR    | app.main:global_exception_handler:107 - Unhandled exception: Out of range float values are not JSON compliant: nan
+2025-07-23 11:02:19 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:02:19 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:02:19 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:02:19 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:02:23 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:02:23 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:02:23 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:02:23 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:02:23 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:02:28 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:02:28 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:02:28 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:02:28 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:02:28 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:02:37 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:02:38 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:02:38 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:02:38 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:02:42 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:02:42 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:02:42 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:02:42 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:02:42 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:02:43 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:02:43 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:02:43 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:02:43 | ERROR    | app.repositories.prediction_repository:create_prediction:41 - Error creating prediction: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:02:43 | ERROR    | app.api.routes:predict_forecast:129 - Error in predict_forecast: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:02:48 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:02:48 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:02:48 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:02:48 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:02:53 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:02:53 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:02:53 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:02:53 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:02:53 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:02:54 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:02:54 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:02:54 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:02:54 | ERROR    | app.repositories.prediction_repository:create_prediction:41 - Error creating prediction: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:02:54 | ERROR    | app.api.routes:predict_forecast:129 - Error in predict_forecast: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:03:20 | ERROR    | app.main:global_exception_handler:107 - Unhandled exception: Out of range float values are not JSON compliant: nan
+2025-07-23 11:03:29 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:03:29 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:03:29 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:03:29 | ERROR    | app.repositories.prediction_repository:create_prediction:41 - Error creating prediction: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:03:29 | ERROR    | app.api.routes:predict_forecast:129 - Error in predict_forecast: 'NoneType' object has no attribute 'insert_one'
+2025-07-23 11:08:20 | ERROR    | app.main:global_exception_handler:107 - Unhandled exception: Out of range float values are not JSON compliant: nan
+2025-07-23 11:09:13 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:13 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:13 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:13 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:17 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:17 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:18 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:18 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:18 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:20 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:20 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:20 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:20 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:24 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:24 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:24 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:24 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:24 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:26 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:26 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:26 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:26 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:30 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:30 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:31 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:31 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:31 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:32 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:32 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:32 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:32 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:36 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:36 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:36 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:36 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:36 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:41 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:41 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:41 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:41 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:45 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:45 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:45 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:45 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:45 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:46 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:46 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:46 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:46 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:50 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:50 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:50 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:50 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:50 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:53 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:53 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:53 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:53 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:09:57 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:09:57 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:09:58 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:09:58 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:09:58 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:09:58 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:09:58 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:09:58 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:09:58 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:02 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:02 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:02 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:02 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:02 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:03 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:10:03 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:10:03 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:10:03 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:07 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:07 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:07 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:07 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:07 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:09 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:10:09 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:10:09 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:10:09 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:13 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:13 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:13 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:13 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:13 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:19 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:10:19 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:10:19 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:10:19 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:23 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:23 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:23 | INFO     | app.services.ml_service:_load_model:237 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:23 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:23 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:30 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:10:30 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:10:30 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:10:30 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:34 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:34 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:34 | INFO     | app.services.ml_service:_load_model:251 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:34 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:34 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:38 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:10:38 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:10:38 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:10:38 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:10:42 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:42 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:42 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:42 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:42 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:48 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:10:48 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:10:48 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:10:48 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:10:48 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:10:53 | ERROR    | app.main:global_exception_handler:107 - Unhandled exception: Out of range float values are not JSON compliant: nan
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:11:02 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:11:02 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:11:02 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:11:06 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:11:06 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:11:06 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:11:06 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:11:06 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:11:19 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:11:19 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:11:19 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:11:20 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:11:20 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 68807600f17a14bc1dac0cf1
+2025-07-23 11:11:36 | ERROR    | app.repositories.prediction_repository:get_prediction:73 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:11:36 | ERROR    | app.api.routes:get_prediction:155 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:14:28 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:14:28 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:14:28 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:14:28 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:21:22 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:21:22 | ERROR    | app.repositories.prediction_repository:get_prediction:73 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:21:22 | ERROR    | app.api.routes:get_prediction:155 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:22:19 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:22:19 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:22:19 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:22:19 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:22:25 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:22:25 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:22:26 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:22:26 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:22:26 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:22:30 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:22:30 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:22:31 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:22:31 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:22:31 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:22:31 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:22:31 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:22:31 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:22:32 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:22:32 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 688078a0ca8c393d27666b1c
+2025-07-23 11:22:32 | ERROR    | app.repositories.prediction_repository:get_prediction:73 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:22:32 | ERROR    | app.api.routes:get_prediction:155 - Error getting prediction: 'recent' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:22:32 | INFO     | app.repositories.prediction_repository:update_prediction:197 - Updated prediction: 688078a0ca8c393d27666b1c
+2025-07-23 11:22:32 | ERROR    | app.repositories.prediction_repository:get_prediction:73 - Error getting prediction: 'invalid_id' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:22:32 | ERROR    | app.api.routes:get_prediction:155 - Error getting prediction: 'invalid_id' is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2025-07-23 11:22:33 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 0 sales records for invalid_store/invalid_product
+2025-07-23 11:22:33 | INFO     | app.repositories.prediction_repository:delete_prediction:221 - Deleted prediction: 688078a0ca8c393d27666b1c
+2025-07-23 11:22:46 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:22:46 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:22:46 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:22:46 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:22:50 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:22:50 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:22:50 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:22:50 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:22:50 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:22:57 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:22:57 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:22:57 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:22:57 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:23:01 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:23:01 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:23:01 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:23:01 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:23:01 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:23:05 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:23:05 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:23:05 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:23:05 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:23:10 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:23:10 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:23:10 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:23:10 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:23:10 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:23:13 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:23:13 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:23:13 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:23:13 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:23:17 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:23:17 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:23:17 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:23:17 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:23:17 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:23:27 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:23:27 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:23:27 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:23:27 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:23:31 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:23:31 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:23:32 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:23:32 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:23:32 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:23:36 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:23:36 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:23:36 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:23:37 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:23:37 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 688078e1e279a11b353bccf6
+2025-07-23 11:23:37 | WARNING  | app.repositories.prediction_repository:get_prediction:65 - Invalid ObjectId format: recent
+2025-07-23 11:23:37 | INFO     | app.repositories.prediction_repository:update_prediction:207 - Updated prediction: 688078e1e279a11b353bccf6
+2025-07-23 11:23:37 | WARNING  | app.repositories.prediction_repository:get_prediction:65 - Invalid ObjectId format: invalid_id
+2025-07-23 11:23:38 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 0 sales records for invalid_store/invalid_product
+2025-07-23 11:23:39 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 688078e1e279a11b353bccf6
+2025-07-23 11:24:13 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:24:13 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:24:13 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:24:13 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:24:17 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:24:17 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:24:17 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:24:17 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:24:17 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:24:30 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:24:30 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:24:30 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:24:30 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:24:34 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:24:34 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:24:34 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:24:34 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:24:34 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:24:35 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:24:35 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:24:35 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:24:36 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:24:36 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 6880791cd6711fbebb6c6171
+2025-07-23 11:24:36 | INFO     | app.repositories.prediction_repository:update_prediction:207 - Updated prediction: 6880791cd6711fbebb6c6171
+2025-07-23 11:24:36 | WARNING  | app.repositories.prediction_repository:get_prediction:65 - Invalid ObjectId format: invalid_id
+2025-07-23 11:24:37 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 0 sales records for invalid_store/invalid_product
+2025-07-23 11:24:37 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 6880791cd6711fbebb6c6171
+2025-07-23 11:24:49 | INFO     | app.main:lifespan:72 - Shutting down Replenishment Service...
+2025-07-23 11:24:49 | INFO     | app.database.connection:disconnect:62 - Async MongoDB connection closed
+2025-07-23 11:24:49 | INFO     | app.main:lifespan:76 - Database disconnected successfully
+2025-07-23 11:24:49 | INFO     | app.main:lifespan:80 - Replenishment Service shutdown complete
+2025-07-23 11:24:53 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:24:53 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-23 11:24:53 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-23 11:24:53 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-23 11:24:53 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-23 11:25:00 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-23 11:25:00 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-23 11:25:00 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-23 11:25:00 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-23 11:25:01 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 68807934dc0b8087c0f35239
+2025-07-23 11:25:01 | INFO     | app.repositories.prediction_repository:update_prediction:207 - Updated prediction: 68807934dc0b8087c0f35239
+2025-07-23 11:25:01 | WARNING  | app.repositories.prediction_repository:get_prediction:65 - Invalid ObjectId format: invalid_id
+2025-07-23 11:25:02 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 0 sales records for invalid_store/invalid_product
+2025-07-23 11:25:02 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 68807934dc0b8087c0f35239

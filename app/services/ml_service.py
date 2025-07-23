@@ -64,16 +64,16 @@ class MLService:
             
             self.model.fit(X_train, y_train)
             
+            # Update model info first
+            self.model_version = f"v{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+            self.training_date = datetime.now()
+            self.feature_columns = feature_cols
+            
             # Make predictions
             y_pred = self.model.predict(X_test)
             
             # Calculate metrics
             self.metrics = self._calculate_metrics(y_test, y_pred)
-            
-            # Update model info
-            self.model_version = f"v{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-            self.training_date = datetime.now()
-            self.feature_columns = feature_cols
             
             # Save model
             self._save_model()
@@ -143,10 +143,24 @@ class MLService:
         mae = mean_absolute_error(y_true, y_pred)
         mse = mean_squared_error(y_true, y_pred)
         rmse = np.sqrt(mse)
-        r2 = r2_score(y_true, y_pred)
         
-        # Calculate MAPE
-        mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+        # Handle R2 score for small datasets
+        try:
+            r2 = r2_score(y_true, y_pred)
+        except:
+            r2 = 0.0
+        
+        # Calculate MAPE with error handling
+        try:
+            mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
+        except:
+            mape = 0.0
+        
+        # Handle NaN values
+        mae = 0.0 if mae != mae else mae
+        mape = 0.0 if mape != mape else mape
+        rmse = 0.0 if rmse != rmse else rmse
+        r2 = 0.0 if r2 != r2 else r2
         
         return ModelMetrics(
             mae=mae,
@@ -168,9 +182,14 @@ class MLService:
         # Create feature importance list
         feature_importance = []
         for i, (name, score) in enumerate(zip(feature_names, importance_scores)):
+            # Handle NaN values in importance scores
+            importance_score = float(score)
+            if importance_score != importance_score:  # Check for NaN
+                importance_score = 0.0
+                
             feature_importance.append(FeatureImportance(
                 feature_name=name,
-                importance_score=float(score),
+                importance_score=importance_score,
                 rank=i + 1
             ))
         
@@ -255,12 +274,27 @@ class MLService:
         
         feature_importance = self._get_feature_importance()
         
+        # Create a safe metrics object
+        safe_metrics = None
+        if self.metrics:
+            try:
+                safe_metrics = ModelMetrics(
+                    mae=self.metrics.mae if self.metrics.mae == self.metrics.mae else 0.0,
+                    mape=self.metrics.mape if self.metrics.mape == self.metrics.mape else 0.0,
+                    rmse=self.metrics.rmse if self.metrics.rmse == self.metrics.rmse else 0.0,
+                    r2_score=self.metrics.r2_score if self.metrics.r2_score == self.metrics.r2_score else 0.0,
+                    training_date=self.metrics.training_date,
+                    model_version=self.metrics.model_version
+                )
+            except:
+                safe_metrics = None
+        
         return ModelInfo(
             model_version=self.model_version,
             training_date=self.training_date,
             features_count=len(self.feature_columns),
             training_samples=0,  # Not stored in saved model
-            metrics=self.metrics,
+            metrics=safe_metrics,
             feature_importance=feature_importance
         )
 

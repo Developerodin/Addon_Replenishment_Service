@@ -15,7 +15,14 @@ class PredictionRepository:
     """Repository for prediction database operations."""
     
     def __init__(self):
-        self.collection = db_manager.collection
+        self.collection = None
+    
+    async def _get_collection(self):
+        """Get database collection, ensuring connection."""
+        if self.collection is None:
+            await db_manager.connect()
+            self.collection = db_manager.collection
+        return self.collection
     
     async def create_prediction(self, prediction: PredictionCreate) -> str:
         """
@@ -28,10 +35,11 @@ class PredictionRepository:
             Created prediction ID
         """
         try:
+            collection = await self._get_collection()
             prediction_dict = prediction.dict()
             prediction_dict['created_at'] = datetime.utcnow()
             
-            result = await self.collection.insert_one(prediction_dict)
+            result = await collection.insert_one(prediction_dict)
             prediction_id = str(result.inserted_id)
             
             logger.info(f"Created prediction with ID: {prediction_id}")
@@ -52,7 +60,13 @@ class PredictionRepository:
             Prediction data or None
         """
         try:
-            prediction_dict = await self.collection.find_one({"_id": ObjectId(prediction_id)})
+            # Validate ObjectId format
+            if not ObjectId.is_valid(prediction_id):
+                logger.warning(f"Invalid ObjectId format: {prediction_id}")
+                return None
+                
+            collection = await self._get_collection()
+            prediction_dict = await collection.find_one({"_id": ObjectId(prediction_id)})
             
             if prediction_dict:
                 prediction_dict['id'] = str(prediction_dict.pop('_id'))
@@ -80,7 +94,8 @@ class PredictionRepository:
             List of predictions
         """
         try:
-            cursor = self.collection.find({"store_id": store_id}).sort("created_at", -1).limit(limit)
+            collection = await self._get_collection()
+            cursor = collection.find({"store_id": store_id}).sort("created_at", -1).limit(limit)
             
             predictions = []
             async for prediction_dict in cursor:
@@ -109,7 +124,8 @@ class PredictionRepository:
             List of predictions
         """
         try:
-            cursor = self.collection.find({"product_id": product_id}).sort("created_at", -1).limit(limit)
+            collection = await self._get_collection()
+            cursor = collection.find({"product_id": product_id}).sort("created_at", -1).limit(limit)
             
             predictions = []
             async for prediction_dict in cursor:
@@ -140,7 +156,8 @@ class PredictionRepository:
             List of predictions
         """
         try:
-            cursor = self.collection.find({
+            collection = await self._get_collection()
+            cursor = collection.find({
                 "store_id": store_id,
                 "product_id": product_id
             }).sort("created_at", -1).limit(limit)
@@ -172,10 +189,16 @@ class PredictionRepository:
             True if updated successfully
         """
         try:
+            # Validate ObjectId format
+            if not ObjectId.is_valid(prediction_id):
+                logger.warning(f"Invalid ObjectId format: {prediction_id}")
+                return False
+                
             update_dict = update_data.dict(exclude_unset=True)
             update_dict['updated_at'] = datetime.utcnow()
             
-            result = await self.collection.update_one(
+            collection = await self._get_collection()
+            result = await collection.update_one(
                 {"_id": ObjectId(prediction_id)},
                 {"$set": update_dict}
             )
@@ -201,7 +224,13 @@ class PredictionRepository:
             True if deleted successfully
         """
         try:
-            result = await self.collection.delete_one({"_id": ObjectId(prediction_id)})
+            # Validate ObjectId format
+            if not ObjectId.is_valid(prediction_id):
+                logger.warning(f"Invalid ObjectId format: {prediction_id}")
+                return False
+                
+            collection = await self._get_collection()
+            result = await collection.delete_one({"_id": ObjectId(prediction_id)})
             
             if result.deleted_count > 0:
                 logger.info(f"Deleted prediction: {prediction_id}")
@@ -224,7 +253,16 @@ class PredictionRepository:
             Dictionary with accuracy statistics
         """
         try:
-            match_filter = {"actual_quantity": {"$exists": True}}
+            # First get total predictions count
+            total_filter = {}
+            if store_id:
+                total_filter["store_id"] = store_id
+                
+            collection = await self._get_collection()
+            total_predictions = await collection.count_documents(total_filter)
+            
+            # Get predictions with actual data
+            match_filter = {"actual_quantity": {"$exists": True, "$ne": None}}
             if store_id:
                 match_filter["store_id"] = store_id
             
@@ -232,32 +270,34 @@ class PredictionRepository:
                 {"$match": match_filter},
                 {"$group": {
                     "_id": None,
-                    "total_predictions": {"$sum": 1},
+                    "predictions_with_actual": {"$sum": 1},
                     "avg_accuracy": {"$avg": "$accuracy"},
                     "min_accuracy": {"$min": "$accuracy"},
                     "max_accuracy": {"$max": "$accuracy"},
                     "avg_mape": {"$avg": {"$abs": {"$divide": [
                         {"$subtract": ["$predicted_quantity", "$actual_quantity"]},
-                        "$actual_quantity"
+                        {"$max": ["$actual_quantity", 1]}  # Avoid division by zero
                     ]}}}
                 }}
             ]
             
-            result = await self.collection.aggregate(pipeline).to_list(1)
+            result = await collection.aggregate(pipeline).to_list(1)
             
             if result:
                 stats = result[0]
                 return {
-                    "total_predictions": stats["total_predictions"],
-                    "avg_accuracy": round(stats["avg_accuracy"], 4),
-                    "min_accuracy": round(stats["min_accuracy"], 4),
-                    "max_accuracy": round(stats["max_accuracy"], 4),
-                    "avg_mape": round(stats["avg_mape"] * 100, 2)
+                    "total_predictions": total_predictions,
+                    "predictions_with_actual": stats["predictions_with_actual"],
+                    "average_accuracy": round(stats["avg_accuracy"], 4) if stats["avg_accuracy"] else 0,
+                    "min_accuracy": round(stats["min_accuracy"], 4) if stats["min_accuracy"] else 0,
+                    "max_accuracy": round(stats["max_accuracy"], 4) if stats["max_accuracy"] else 0,
+                    "avg_mape": round(stats["avg_mape"] * 100, 2) if stats["avg_mape"] else 0
                 }
             
             return {
-                "total_predictions": 0,
-                "avg_accuracy": 0,
+                "total_predictions": total_predictions,
+                "predictions_with_actual": 0,
+                "average_accuracy": 0,
                 "min_accuracy": 0,
                 "max_accuracy": 0,
                 "avg_mape": 0
@@ -278,12 +318,25 @@ class PredictionRepository:
             List of recent predictions
         """
         try:
-            cursor = self.collection.find().sort("created_at", -1).limit(limit)
+            collection = await self._get_collection()
             
+            # Use aggregation pipeline for better error handling
+            pipeline = [
+                {"$sort": {"created_at": -1}},
+                {"$limit": limit},
+                {"$addFields": {"id": {"$toString": "$_id"}}},
+                {"$project": {"_id": 0}}
+            ]
+            
+            cursor = collection.aggregate(pipeline)
             predictions = []
+            
             async for prediction_dict in cursor:
-                prediction_dict['id'] = str(prediction_dict.pop('_id'))
-                predictions.append(PredictionInDB(**prediction_dict))
+                try:
+                    predictions.append(PredictionInDB(**prediction_dict))
+                except Exception as parse_error:
+                    logger.warning(f"Error parsing prediction: {parse_error}")
+                    continue
             
             return predictions
             

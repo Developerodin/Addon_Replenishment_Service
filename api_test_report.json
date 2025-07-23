@@ -1,0 +1,139 @@
+{
+  "summary": {
+    "total_tests": 16,
+    "successful_tests": 16,
+    "failed_tests": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "endpoint": "/health",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:24:59.741750"
+    },
+    {
+      "endpoint": "/model/info",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:24:59.747148"
+    },
+    {
+      "endpoint": "/predict-forecast",
+      "method": "POST",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.029254"
+    },
+    {
+      "endpoint": "/predictions/68807934dc0b8087c0f35239",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.068353"
+    },
+    {
+      "endpoint": "/predictions/store/20000",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.105885"
+    },
+    {
+      "endpoint": "/predictions/product/ASC1SALBC00347",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.142168"
+    },
+    {
+      "endpoint": "/predictions/store/20000/product/ASC1SALBC00347",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.179257"
+    },
+    {
+      "endpoint": "/predictions/recent",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.248014"
+    },
+    {
+      "endpoint": "/predictions/68807934dc0b8087c0f35239",
+      "method": "PUT",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.324616"
+    },
+    {
+      "endpoint": "/stats/accuracy",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.395211"
+    },
+    {
+      "endpoint": "/stats/accuracy?store_id=20000",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:01.464385"
+    },
+    {
+      "endpoint": "/predictions/invalid_id",
+      "method": "GET",
+      "status": 404,
+      "success": true,
+      "error": "Should return 404 for invalid ID",
+      "timestamp": "2025-07-23T11:25:01.467160"
+    },
+    {
+      "endpoint": "/predictions/store/invalid_store",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": "Should return empty list for invalid store",
+      "timestamp": "2025-07-23T11:25:01.502826"
+    },
+    {
+      "endpoint": "/predictions/product/invalid_product",
+      "method": "GET",
+      "status": 200,
+      "success": true,
+      "error": "Should return empty list for invalid product",
+      "timestamp": "2025-07-23T11:25:01.538706"
+    },
+    {
+      "endpoint": "/predict-forecast (invalid data)",
+      "method": "POST",
+      "status": 404,
+      "success": true,
+      "error": "Should return 404 for no historical data",
+      "timestamp": "2025-07-23T11:25:02.303340"
+    },
+    {
+      "endpoint": "/predictions/68807934dc0b8087c0f35239",
+      "method": "DELETE",
+      "status": 200,
+      "success": true,
+      "error": null,
+      "timestamp": "2025-07-23T11:25:02.355078"
+    }
+  ],
+  "timestamp": "2025-07-23T11:25:02.369053"
+}
