@@ -449,3 +449,24 @@
 2025-07-23 11:25:01 | WARNING  | app.repositories.prediction_repository:get_prediction:65 - Invalid ObjectId format: invalid_id
 2025-07-23 11:25:02 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 0 sales records for invalid_store/invalid_product
 2025-07-23 11:25:02 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 68807934dc0b8087c0f35239
+2025-07-24 12:09:51 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-24 12:09:51 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-24 12:09:52 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-24 12:09:52 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-24 12:09:52 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-24 12:10:01 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-24 12:10:01 | INFO     | app.main:lifespan:55 - Database connected successfully
+2025-07-24 12:10:01 | INFO     | app.services.ml_service:_load_model:256 - Model loaded from ./models/xgboost_model.pkl
+2025-07-24 12:10:01 | INFO     | app.main:lifespan:59 - ML model loaded successfully
+2025-07-24 12:10:01 | INFO     | app.main:lifespan:63 - Replenishment Service started successfully
+2025-07-24 12:10:11 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-24 12:10:11 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-24 12:10:11 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-24 12:10:12 | INFO     | app.database.connection:connect:35 - Connected to MongoDB: replenishment_service
+2025-07-24 12:10:12 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 6881d54ce50e02befd38473f
+2025-07-24 12:10:34 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 6881d43d474b2376f5a3f58f
+2025-07-24 12:10:37 | INFO     | app.repositories.prediction_repository:delete_prediction:236 - Deleted prediction: 6881d54ce50e02befd38473f
+2025-07-24 12:10:58 | INFO     | app.services.data_service:fetch_sales_data:79 - Fetched 1 sales records for 20000/ASC1SALBC00347
+2025-07-24 12:10:58 | WARNING  | app.services.data_service:prepare_features_data:172 - Very little data available (1 records). Model may not perform well.
+2025-07-24 12:10:58 | INFO     | app.services.data_service:prepare_features_data:216 - Prepared features data with 1 rows and 21 features
+2025-07-24 12:10:58 | INFO     | app.repositories.prediction_repository:create_prediction:45 - Created prediction with ID: 6881d57ae50e02befd384740
